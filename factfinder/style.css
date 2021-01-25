@@ -1,0 +1,24 @@
+ input{
+	 padding:15px 25px;
+	 border: 4px solid crimson;
+	 border-radius:10px;
+	 color:crimson;
+	 font-weight:bold;
+	 background-color:Aquamarine;
+ }
+ input:hover{
+	 color:Aquamarine;
+	 border: 4px solid Aquamarine;
+	 background-color:crimson;
+ }
+ #factDisplay{
+	 border:4px solid black;
+	 border-radius:20px;
+	 margin:10px;
+	 padding:15px;
+	 width:670px;
+	 min-height:300px;
+ }
+img{
+	width:90%;
+}
