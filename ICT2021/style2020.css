@@ -131,85 +131,8 @@ main{
     'notices'
     'contact'
     'meme'
+    'resources'
     'rules';
-}
-#contentoutline{
-	grid-area:content;
-    display:grid;
-	grid-gap:20px;
-	grid-template-columns:1fr 1fr;
-	grid-template-areas:
-	'rationale rationale'
-	'topics topics'
-	'ongoing ongoing'
-	'outlinepic1 outlinepic2'
-    'challenge challenge';
-	background-color:#FFFFFF;
-    margin: 0px;
-    margin-top: -60px;
-    padding: 20px;
-	height:100%;
-}
-#contentoutline > *{
-	/*border:3px solid black;*/
-}
-#contentoutlinedm{
-	grid-area:content;
-    display:grid;
-	grid-gap:20px;
-	grid-template-columns:1fr;
-	grid-template-areas:
-	'rationale'
-	'topics'
-	'dmresources'
-	'outlinepic1';
-	background-color:#FFFFFF;
-    margin: 0px;
-    margin-top: -60px;
-    padding: 20px;
-	height:100%;
-}
-#contentoutlinecs{
-	grid-area:content;
-    display:grid;
-	grid-gap:20px;
-	grid-template-columns:1fr 1fr;
-	grid-template-areas:
-	'rationale rationale'
-	'topics topics'
-	'outlinepic1 outlinepic2';
-	background-color:#FFFFFF;
-    margin: 0px;
-    margin-top: -60px;
-    padding: 20px;
-	height:100%;
-}
-#contentoutlinemdma{
-	grid-area:content;
-    display:grid;
-	grid-gap:20px;
-	grid-template-columns:1fr 1fr;
-	grid-template-areas:
-	'rationale rationale'
-	'topics topics'
-	'outlinepic1 outlinepic2'
-  'assessment assessment';
-	background-color:#FFFFFF;
-    margin: 0px;
-    margin-top: -60px;
-    padding: 20px;
-	height:100%;
-}
-#contentunit{
-	grid-area:content;
-    display:grid;
-	grid-gap:20px;
-	grid-template-columns:1fr;
-	background-color:#FFFFFF;
-    margin: 0px;
-    margin-top: -60px;
-    padding: 20px;
-	height:100%;
 }
 
 
@@ -263,14 +186,7 @@ main{
     background-color: #DE5360;
     grid-area:rules;
 }
-#rationale{
-	grid-area:rationale;
-	background-color: #F2F2F2;
-}
-#topics{
-	grid-area:topics;
-	background-color: #F2F2F2;
-}
+
 #outlinepic1{
 	grid-area:outlinepic1;
     width:100%;
@@ -281,47 +197,7 @@ main{
     width:100%;
     max-width:420px;
 }
-#ongoing{
-	grid-area:ongoing;
-	background-color: #F2F2F2;
-}
-#dmresources{
-    grid-area:dmresources;
-    background-color: #F2F2F2;
-}
-#challenge{
-    grid-area:challenge;
-    background-color: #F2F2F2;
-}
-#assessment{
-	grid-area:assessment;
-	background-color: #F2F2F2;
-}
-.assignment{
-	height:5px;
-    overflow: hidden;
-    padding-top:18px;
-    background-color: #F2F2F2;
-}
-.assignment h3{
-    font-size:20px;
-    cursor: pointer;
-    background-color:#EBEBEB;
-    margin-left:-35px;
-    margin-right:-35px;
-    margin-top:-18px;
-    padding:17px;
-}
-.assignment .mark{
-    float:right;
-    color:red;
-    margin-left:10px;
-}
 
-.assignment .date{
-    float:right;
-    color:dodgerblue;
-}
 
 section{
     /*margin-top:10px;*/
@@ -412,6 +288,7 @@ div a:hover, section a:hover{
         grid-template-areas:
         'notices notices'
         'contact meme'
+        'resources resources'
         'rules rules';
     }
 	#contentoutline{
