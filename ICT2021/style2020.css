@@ -245,7 +245,7 @@ div a:hover, section a:hover{
     }
     nav > #menu{
         display: grid;
-        grid-template-columns: 1fr; /********* NUMBER  OF COLUMNS FOR TOP NAV MENU *********/
+        grid-template-columns: 1fr 1fr 1fr 1fr; /********* NUMBER  OF COLUMNS FOR TOP NAV MENU *********/
         grid-column: 2/3;
     }
     nav > #menu > a{
