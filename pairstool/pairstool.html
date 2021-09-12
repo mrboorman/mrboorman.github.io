@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Student Partner Picker!</title>
+      <style type="text/css">
+          body{
+              background-color:cornsilk;
+          }
+          form > *{
+              margin:5px;
+              font-size:18px;
+          }
+          h1{
+              font-family: 'Comic Sans MS';
+              color: hotpink;
+              font-size:72px;
+          }
+          ol{
+              list-style-type: upper-alpha;
+          }
+      </style>
+    <script type="text/javascript">
+        
+        var list; 
+        var size;
+        
+        function setclasssize(classsize){
+            size = parseInt(classsize);
+            list = new Array(size);
+            alert("class list size: " + size);
+            makeenternames(classsize);
+        
+        }
+        
+        function makeenternames(size){
+            document.getElementById("enternames").innerHTML = "<h3>Enter Student Names:</h3>"
+            var input = document.createElement("FORM");
+            input.id = "enternamesform";
+            document.getElementById('enternames').appendChild(input);
+            for(i = 0;i < size;i++){
+                //var i = 1;
+                var field = document.createElement("INPUT");
+                field.id = "student" + i;
+                field.type = "text"; 
+                document.getElementById('enternamesform').appendChild(field);
+                var b = document.createElement("BR")
+                document.getElementById('enternamesform').appendChild(b);
+            }
+            var butt = document.createElement("INPUT");
+            butt.type = "button";
+            butt.value = "GENERATE PAIRS";
+            butt.setAttribute("onclick","fillarray()");
+            document.getElementById('enternamesform').appendChild(butt);
+                
+        }//end of makeenternames
+        
+        function fillarray(){
+            
+            for(j = 0;j < size;j++){
+                
+                list[j] = document.getElementById("student" + j).value;
+                
+            } 
+            
+            makepairs();
+        }
+        
+        function shuffleArray(week){
+            
+            var newWeek = new Array(size);
+            
+            for(i = 0;i<size;i++){
+                if(i == 0){
+                    newWeek[i] = week[i];   
+                }
+                else if(i == 1){
+                    newWeek[i] = week[size-1];
+                }
+                else{
+                    newWeek[i] = week[i-1];        
+                } 
+            }//end for loop
+            return newWeek;
+        }
+        
+        function makepairs(){
+  
+            var weeklist = list;
+            var s = size;
+            if(size % 2 != 0){
+                s = size - 1;
+            }
+            
+  
+            for(w = 0;w<size-1;w++){
+                
+                //create HTML SUBHEADING for new week
+                var weekheading = document.createElement("H2");
+                weekheading.id = "WH" + w;
+                weekheading.innerHTML = "Week " + (w+1) + " Partners:";
+                document.getElementById("allweeks").appendChild(weekheading);
+                
+                //create empty HTML LIST for new week
+                var weekorderedlist = document.createElement("OL");
+                weekorderedlist.id = "WOL" + w;
+                document.getElementById("allweeks").appendChild(weekorderedlist);
+            
+                //print week list
+                for(n = 0;n < (s-1)/2;n++){
+                    var names = document.createElement("LI");
+                    names.innerHTML = weeklist[n] + " with " + weeklist[s-1-n];
+                    document.getElementById('WOL'+w).appendChild(names);
+                }
+                if(size % 2 != 0){
+                    var laststudent = size - 1;
+                    var names = document.createElement("LI");
+                    names.innerHTML = weeklist[laststudent] + " takes the place of somebody away.";
+                    document.getElementById('WOL'+w).appendChild(names);    
+                }
+                
+                weeklist = shuffleArray(weeklist);
+            
+            }//end of outer loop
+            
+            
+            
+            
+        }
+    </script>
+  </head>
+  
+  <body>
+      <h1><marquee>SUPER DUPER STUDENT PAIR PICKER!! 👻</marquee></h1>
+    <div id="classsizecontainer">
+    Number of students in class:
+    <form>
+        <input type="number" name="classsize">
+        <input type="button" value="ENTER CLASS SIZE" name="confirmclasssize" onclick="setclasssize(classsize.value)">
+    </form>
+    </div>
+    <div id="enternames">
+      
+    </div>
+    <h3 id="week1header"></h3>
+    <div id="firstpairs">
+      <ol id="week1">
+      </ol>
+    </div>
+    <div id="allweeks">
+      
+    </div>
+  </body>
+  
+</html>
