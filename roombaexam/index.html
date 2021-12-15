@@ -1,0 +1,661 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="generator" content=
+    "HTML Tidy for Linux/x86 (vers 25 March 2009), see www.w3.org" />
+    <title>
+      ICT 9/10 Unit 2 Exam
+    </title>
+    <style type="text/css">
+			body{
+				font-family:Arial;
+			}
+			h1,h2,h3
+			{
+				font-family:Arial;
+			}
+
+			.mainlist li
+			{
+				margin-top:30px;
+				margin-bottom:20px;
+				font-family:Arial;
+				font-weight:bold;
+				font-size:12px;
+				
+			}		
+			.answers
+			{
+				margin-top:15px;
+				color:#FF0000;
+				list-style-type:upper-alpha;
+			}
+			.answers li
+			{
+				margin-top:10px;
+				margin-bottom:5px;
+				font-family:Consolas;
+				font-weight:normal;
+			}
+			pre
+			{
+				color:#0000AA;
+				font-size:15px;
+				font-weight:normal;
+			}
+	
+    </style>
+
+  </head>
+<body>
+<h3>ICT 9/10 Unit 2 Exam - C# &amp; Godot</h3>
+
+<ul style="font-size:12px; line-height:22px;">
+	<li>40 Multiple-Choice Questions.</li>
+	<li>Choose the best answer for each of the following questions (answer all questions on your scantron using a pencil).</li>
+	<li>Choose the BEST Single Answer for all questions. Answer All Questions.</li>
+	<li>This exam is CLOSED files / CLOSED notes / CLOSED web.</li>
+	<li>NO: talking, cell phones, headphones, communication.</li>
+	<li>You must only have one web browser open during this exam, with only one tab open (with this exam). <br>Though: If English is your second language you may also use: <a href="https://translate.google.ca/" target="_blank">Google Translate</a> open in one other browser tab.</li>
+	<li>Finished? Check your answers on your scantron, close the exam webpage, and hand in your scantron and any scrap paper you used or were provided *FACE DOWN* to the tray at the front of the room. ... Then: *silently* work on any assignments, practice keyboarding, etc.</li>
+
+</ul>
+<hr/>
+<h4 style="color:dodgerblue;">Section 1 : Computer Programming &amp; C#:</h4>
+<ol class="mainlist">
+
+	
+	<li>Which of the following commands is used for output to the console?
+		<ol class="answers">
+			<li>Console.Write('Hello World');</li>
+			<li>Console.Output("Hello World");</li>
+			<li>Console.RightLine("Hello World");</li>
+			<li>Console.WriteLine("Hello World");</li>
+			<li>Console.Print('Hello World');</li>
+		</ol>
+	</li>
+	
+	<li>"Syntax" refers to:
+		<ol class="answers">
+			<li>The category of software used to write code (eg: onlinegdb.com, Visual Studio, etc.)</li>
+			<li>Adhering to correct order of operations.</li>
+			<li>Control Flow: Structuring code to allow simple decisions to be made during a program's run-time.</li>
+			<li>The rules of a language.</li>
+		</ol>
+	</li>
+	
+	<li>Which of the following commands is used for String input from the console?
+		<ol class="answers">
+			<li>Console.ReedLine();</li>
+			<li>Console.ReadKey();</li>
+			<li>Console.ReadLine();</li>
+			<li>Console.Readline();</li>
+		</ol>
+	</li>
+	
+	<li>Which one of the following operators is not like the other one?:&nbsp;
+		<span style="font-family:consolas;color:blue;font-size:18px;">&nbsp;&nbsp;=&nbsp; +&nbsp; -&nbsp; *&nbsp; /&nbsp; %</span>
+		<ol class="answers">
+			<li>%</li>
+			<li>=</li>
+			<li>+</li>
+			<li>/</li>
+		</ol>
+	</li>
+	
+	<li><span style="font-family:consolas;color:blue;font-size:18px;">&nbsp;&nbsp; ==&nbsp; <&nbsp; >&nbsp; <=&nbsp; >=&nbsp; ==</span> &nbsp;&nbsp; are all: __________________. 
+		<ol class="answers">
+			<li>boolean expressions</li>
+			<li>ALU expressions</li>
+			<li>assignment operators</li>
+			<li>comparison operators</li>
+		</ol>
+	</li>
+	
+	<li>Fill in the Blanks: "Compilation" is the process by which the compiler turns code written in  __________ and creates a ___________ program. 
+		<ol class="answers">
+			<li>ascii / binary</li>
+			<li>windows / linux</li>
+			<li>decimal / binary</li>
+			<li>binary / ascii</li>
+		</ol>
+	</li>
+	
+	<li>You want to make an asterisk (*) flash (evenly on and off) on the screen a number of times. To display the asterisk a number of times, you would use the code:
+<pre>
+Console.WriteLine("*");
+Console.WriteLine("*");
+Console.WriteLine("*");
+Console.WriteLine("*");
+Console.WriteLine("*");
+</pre>
+What code would need to be added between each of the above lines to make flashing occur?
+		<ol class="answers">
+			<li>Console.Clear();<br/>System.Threading.Thread.Sleep(300);</li>
+			<li>System.Threading.Thread.Sleep(300);<br/>Console.Clear();<br/>System.Threading.Thread.Sleep(300);</li>
+			<li>System.Threading.Thread.Sleep(300);<br/>Console.Clear();</li>
+			<li>Console.Clear();<br/>System.Threading.Thread.Sleep(300);<br/>Console.Clear();</li>
+		</ol>
+	</li>
+	
+	<li>You want to ask the user to enter their name. What variable data-type would you need to store this information?
+		<ol class="answers">
+			<li>int</li>
+			<li>string</li>
+			<li>char</li>
+			<li>double</li>
+		</ol>
+	</li>
+	
+	<li>Assume you have the user's name stored in a variable called "name". To say hello to the user, which code would you use?
+		<ol class="answers">
+			<li>Console.Writeline("Hello, " name);</li>
+			<li>Console.Output("Hello, " + name);</li>
+			<li>Console.WriteLine("Hello, " + name);</li>
+			<li>Console.Writeline("Hello name");</li>
+		</ol>
+	</li>
+	
+	<li>Which command jumps immediately to the (boolean expression) of a loop (like a do.. while loop), and evaluates it? 
+		<ol class="answers">
+			<li>continue;</li>
+			<li>break;</li>
+			<li>true;</li>
+			<li>system();</li>
+			<li>return;</li>
+		</ol>
+	</li>
+	
+	<li>Which command jumps down to below a loop, exiting it?
+		<ol class="answers">
+			<li>continue;</li>
+			<li>break;</li>
+			<li>true;</li>
+			<li>system();</li>
+			<li>exit();</li>
+		</ol>
+	</li>
+	
+	<li>What is wrong with the following code?:
+<pre>
+string password;
+
+Console.Write("Enter your password:");
+password = Convert.ToChar(Console.ReadLine());
+
+if(password == "QWERTY"){
+	Console.WriteLine("ACCESS GRANTED.");
+}
+</pre>
+
+		<ol class="answers">
+			<li>Convert.ToChar is converting to the wrong data-type. Actually, no conversion is needed here.</li>
+			<li>Replace the == with an single =</li>
+			<li>"QWERTY" should be 'QWERTY'</li>
+			<li>Replace the = with a double ==</li>
+		</ol>
+	</li>
+	
+	<li>Fill in the blank: In the C# Math class, you wil find many differently named _______________________. 
+		<ol class="answers">
+			<li>methods</li>
+			<li>loops</li>
+			<li>conditional statements</li>
+			<li>control flow expressions</li>
+		</ol>
+	</li>
+	
+	<li>You write a program that asks the user to guess a whole number between 50 and 90 so that 50 &le; num &le; 95. What variable type would you need to store this number? 
+		<ol class="answers">
+			<li>int</li>
+			<li>string</li>
+			<li>char</li>
+			<li>double</li>
+		</ol>
+	</li>
+	
+	<li>Which of the following boolean expressions could be used  as the condition in an if-statement to determine if a number stored in variable <i>num</i> is: 50 &le; num &le; 95 (greather than or equal to 50 and less than or equal to 95)?
+		<ol class="answers">
+			<li>(50 <= num <= 95)</li>
+			<li>(num >= 50 && num <= 95)</li>
+			<li>(95 <= num <= 50)</li>
+			<li>(num <= 50 && num >= 95)</li>
+			<li>(num < 50 || num > 95)</li>
+		</ol>
+	</li>
+		
+	
+	<li>A program asks the user if they wish to repeat the program. The program stores the answer in a variable called "answer". Which loop below would repeat if the user types "yes"?
+		<ol class="answers">
+			<li><pre>
+do{
+
+}while(answer = "yes");
+			</pre></li>
+			<li><pre>
+do{
+
+}while (answer == "yes");
+			</pre></li>
+			<li><pre>
+if (answer == "yes")
+{
+
+}
+			</pre></li>
+			<li><pre>
+if (answer = "yes")
+{
+
+}
+			</pre></li>
+
+		</ol>
+	</li>
+	
+	<li>What special character essentially presses 'Enter', starting a new line in a literal string?
+		<ol class="answers">
+			<li>/n</li>
+			<li>\n</li>
+			<li>\\n</li>
+			<li>Console.newLine();</li>
+		</ol>
+	</li>
+	
+	<li>Which characters, besides newline, are considered special characters when printing ascii art?
+		<ol class="answers">
+			<li>\&nbsp;&nbsp;&nbsp;"</li>
+			<li>/&nbsp;&nbsp;&nbsp;'</li>
+			<li>"&nbsp;&nbsp;&nbsp;'</li>
+			<li>\&nbsp;&nbsp;&nbsp;/</li>
+		</ol>
+	</li>
+	
+	<li>What is the output of the following code?
+<pre>
+int x = -5;
+do
+{
+    Console.Write(x + " ");
+    x = x + 1;
+}
+while(x < 5);
+</pre>
+		<ol class="answers">
+			<li>-5 -4 -3 -2 -1 0 1 2 3 4</li>
+			<li>-4 -3 -2 -1 0 1 2 3 4 5</li>
+			<li>x x x x x x x x x x</li>
+			<li>it prints 10 spaces</li>
+		</ol>
+	</li>
+	
+	
+	<li>For what values of x will the following if/else-statement print "True"?
+<pre>
+if(x < 0 || x == 2 || x == 4 || x == 6 || x == 8 || x > 10)
+{
+    Console.WriteLine("False");
+}
+else
+{
+    Console.WriteLine("True");
+}
+</pre>
+		<ol class="answers">
+			<li>any number less than zero, or any number greater than 10, or 2, 4, 6, or 8</li>
+			<li>all odd numbers from 0 to 10</li>
+			<li>all even numbers from 0 to 10</li>
+			<li>this if statement will print “False” no matter what the value of x</li>
+		</ol>
+	</li>
+	
+	<li>Assume this code is inside (at the top of) your program's Main method:<br>
+<pre>
+string name;
+int x;
+int age;
+</pre>
+
+	Later in the same program, the code: <span style="font-family:consolas;color:#0000AA;font-size:15px;font-weight:100;">try{&nbsp;&nbsp;&nbsp;&nbsp;}</span> would most beneficially contain which of the following lines of code?:
+		<ol class="answers">
+			<li><pre>Console.ReadKey();</pre></li>
+			<li><pre>name = Console.ReadLine();</pre></li>
+			<li><pre>x = 5.7;</pre></li>
+			<li><pre>age = Convert.ToInt32(Console.ReadLine());</pre></li>
+		</ol>
+	</li>
+	
+	<li>Which Class directly contains the definition for the method <span style="font-family:consolas;color:blue;">Abs()</span>?
+		<ol class="answers">
+			<li>Console</li>
+			<li>Convert</li>
+			<li>System</li>
+			<li>Thread</li>
+			<li>Math</li>
+		</ol>
+	</li>
+	
+	<li>In the code:<br><br>
+	<span style="font-family:consolas;color:blue;">String n = "noob";<br>Console.Write("Hello " + n);</span><br>
+	<br>The <span style="font-family:consolas;color:blue;">+</span> is used for:
+		<ol class="answers">
+			<li>Concatenation</li>
+			<li>Addition</li>
+			<li>Threading</li>
+			<li>Assignment</li>
+		</ol>
+	</li>
+	
+	<li>Which of the following is equivalent to the second line of the following code?:<br><br>
+	<span style="font-family:consolas;color:blue;">int i = 5;<br>
+	i = i + 1;
+	</span>
+		<ol class="answers">
+			<li>Convert.ToDouble(i % 1);</li>
+			<li>i++;</li>
+			<li>Math.Ceiling(i);</li>
+			<li>i + 1 = i;</li>
+		</ol>
+	</li>
+	
+	<li>In the following code:<br><br>
+	<span style="font-family:consolas;color:blue;">
+	double ans = Math.Pow(x,y)
+	</span><br><br>
+	x and y are being sent as _________________.
+		<ol class="answers">
+			<li>parameters</li>
+			<li>boolean expressions</li>
+			<li>conditions</li>
+			<li>syntax</li>
+		</ol>
+	</li>
+	
+	<li>In the following code:<br><br>
+	<span style="font-family:consolas;color:blue;">
+	double ans = Math.Pow(x,y)
+	</span><br><br>
+	<span style="font-family:consolas;color:green;">ans</span> is:
+		<ol class="answers">
+			<li>receiving parameters from Math.Pow</li>
+			<li>being cast from Math.Pow</li>
+			<li>being assigned a return value</li>
+			<li>being evaluated for equality</li>
+		</ol>
+	</li>
+	
+	
+<br/><hr/><br/>
+<strong style="font-family:Arial;font-size:18px;">The following 6 questions apply to the following code fragment. It shows a menu with three choices (1, 2 and 3). If the user enters one of the correct choices, it exits the loop. If the user enters a character instead of a number, it prints an error, pauses (for 2.5 seconds), clears the error, and then repeats the menu and input. If the user enters a number that is not a valid choice, it prints an error, pauses (for 2.5 seconds), clears the error, and then repeats the menu and input.</strong>
+
+<pre>
+int choice = 0;
+do
+{
+    try
+    {
+        Console.Write("Please choose (1) instructions  (2) Play Game  (3) Quit Game.: ");
+        _____(27)_____
+        Console.Write("\n");
+    }
+    catch
+    {
+        Console.WriteLine("You must enter a NUMBER!!!!");
+        _____(28)_____
+        _____(29)_____
+        _____(30)_____
+    }
+    
+    if(_____(31)_____)
+    {
+        Console.WriteLine("Nope! Please choose a number between 1 and 3.");
+        _____(28)_____
+        _____(29)_____
+        _____(30)_____
+    }
+    
+    _____(32)_____
+}
+while(true);	
+</pre>
+	
+	
+	<li>What code is missing from the line marked _____(27)_____?
+		<ol class="answers">
+			<li>Console.Read(choice);</li>
+			<li>Console.ReadLine(choice);</li>
+			<li>choice = Console.ReadLine();</li>
+			<li>choice = Convert.ToInt32(Console.ReadLine());</li>
+		</ol>
+	</li>
+	
+	<li>What code is missing from the two lines marked _____(28)_____?
+		<ol class="answers">
+			<li>System.Threading.Thread.Sleep(2500);</li>
+			<li>Console.Clear();</li>
+			<li>System.ReadKey();</li>
+			<li>System.ReadLine();</li>
+		</ol>
+	</li>
+	
+	<li>What code is missing from the two lines marked _____(29)_____?
+		<ol class="answers">
+			<li>System.Threading.Thread.Sleep(2500);</li>
+			<li>Console.Clear();</li>
+			<li>System.ReadKey();</li>
+			<li>System.ReadLine();</li>
+		</ol>
+	</li>
+
+	<li>What code is missing from the two lines marked _____(30)_____?
+		<ol class="answers">
+			<li>continue;</li>
+			<li>break;</li>
+			<li>Console.Write("\n");</li>
+			<li>Console.Clear();</li>
+		</ol>
+	</li>
+	
+	<li>What code is missing from the line marked _____(31)_____?
+		<ol class="answers">
+			<li>choice &gt; 1 &amp;&amp; choice &lt; 3</li>
+			<li>choice &gt; 1 || choice &lt; 3</li>
+			<li>choice &lt; 1 &amp;&amp; choice &gt; 3</li>
+			<li>choice &lt; 1 || choice &gt; 3</li>
+		</ol>
+	</li>
+	
+	<li>What code is missing from the line marked _____(32)_____?
+		<ol class="answers">
+			<li>break;</li>
+			<li>continue;</li>
+			<li>Console.ReadKey();</li>
+			<li>Console.Clear();</li>
+		</ol>
+	</li>
+	
+<br/>
+<br/><hr/><br/>	
+<strong style="font-family:Arial;font-size:18px;">The following 2 questions apply to the following code fragment. It tells a (terrible) knock-knock joke one line at a time (2.5 second pauses between each line of the joke), and then asks the user if they want to be told the same joke again. If the user types in a 'y' or 'Y', the joke is re-told after another 2.5 second pause. If the user types in any other letter, the program will close. This code has no error checking.</strong>
+<br/><br/>
+<pre>
+___(33)___ choice = 'y';
+
+do
+{
+    Console.WriteLine("Knock knock.")
+    _____(34)_____
+    Console.WriteLine("Who's there?")
+    _____(34)_____
+    Console.WriteLine("King Tut.")
+    _____(34)_____
+    Console.WriteLine("King Tut who??")
+    _____(34)_____
+    Console.WriteLine("King Tut-Key Fried Chicken!")
+    _____(34)_____
+    
+    Console.Clear();
+
+    Console.Write("Would you like to hear that joke again?(y/n): ");
+    choice = Convert.toChar(Console.ReadLine());
+    _____(34)_____
+    Console.Clear();
+    
+    if(choice == 'y' || choice == 'Y'){
+        continue;
+    }
+        break;
+}
+while(true);	
+</pre>	
+	
+	<li>What code is missing from the line marked _____(33)_____?
+		<ol class="answers">
+			<li>string</li>
+			<li>int</li>
+			<li>double</li>
+			<li>char</li>
+		</ol>
+	</li>
+	
+	<li>What code is missing from the lines marked _____(34)_____?
+		<ol class="answers">
+			<li>Console.CLS;</li>
+			<li>Console.Sleep(2500);</li>
+			<li>System.Threading.Thread.Sleep(2500)</li>
+			<li>Console.Clear();</li>
+		</ol>
+	</li>
+	
+
+
+
+
+<hr style="position:relative;left:-35px;">
+<h4 style="color:dodgerblue;position:relative;left:-35px;">Section 2 : Godot &amp; GDscript:</h4>
+
+
+
+	<li>In C#, you might use the following code to create two integers and assign them values:<br><br>
+	<span style="font-family:consolas;color:blue;">
+		int x = 5;<br>
+		int y = 2;
+	</span><br><br>
+	In gdscript, you're likely to code the equivalent with:
+		<ol class="answers">
+			<li>
+			<span style="font-family:consolas;color:blue;">
+				var x = 5;<br>
+				var y = 2;
+			</span>
+			</li>
+			
+			<li>
+			<span style="font-family:consolas;color:blue;">
+				Vector2 x = (5,2);
+			</span>
+			</li>
+			<li>
+			<span style="font-family:consolas;color:blue;">
+				x = (int)5<br>
+				y = (int)2
+			</span>
+			</li>
+			<li>
+			<span style="font-family:consolas;color:blue;">
+				var x = 5<br>
+				var y = 2
+			</span>
+			</li>
+
+		</ol>
+	</li>
+	
+	<li>In C#, you might use the following code to evaluate the value of the integer age:<br><br>
+	<span style="font-family:consolas;color:blue;">
+		if(age > 40){
+			Console.WriteLine("You're old!");
+		}
+	</span><br><br>
+	In gdscript, you're likely to code the equivalent with:
+		<ol class="answers">
+			<li>
+			<span style="font-family:consolas;color:blue;">
+			if(age > 40):<br>
+			print("You're old!");
+			</span>
+			</li>
+			
+			<li>
+			<span style="font-family:consolas;color:blue;">
+			if age > 40:<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;print("You're old!")
+			</span>
+			</li>
+			<li>
+			<span style="font-family:consolas;color:blue;">
+			if age > 40{<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;print("You're old!")<br>
+			}
+			</span>
+			</li>
+			<li>
+			<span style="font-family:consolas;color:blue;">
+			if (age > 40){<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;print("You're old!");<br>
+			}
+			</span>
+			</li>
+
+		</ol>
+	</li>
+	
+	<li>In gdscript we use indentation, where in C# we use ____________
+		<ol class="answers">
+			<li>\t</li>
+			<li>{ }</li>
+			<li>a semi-colon</li>
+			<li>weak data-typing</li>
+		</ol>
+	</li>
+	
+	<li>Which of the following (pictured below) would most appropriately be used to create a block that would never move (eg: a platform your character could jump up onto)?
+	<img src="images/godot1.png" alt="godot image 1" style="width:200px;margin:10px;">
+		
+	</li>
+	
+	<li>In Godot, a ______________ is best used to create a physical character object you can program to respond to arrow-key presses.
+		<ol class="answers">
+			<li>RigidBody2D</li>
+			<li>StaticBody2D</li>
+			<li>TileMap</li>
+			<li>KinematicBody2D</li>
+		</ol>
+		
+	</li>
+	
+	<li><span style="color:teal;">Fill in the blanks, in order:</span> In Godot, the  ________________ function is used to move a ______________ object when provided a __________ parameter.
+		<ol class="answers">
+			
+			<li>Vector2() , StaticBody2D, double data-type</li>
+			<li>lerp() , Area2D , iterated</li>
+			<li>move_and_slide() , KinematicBody2D , Vector2</li>
+			<li>_physics_process(delta) , RigidBody2D , constant</li>
+		</ol>
+		
+	</li>
+
+</ol>
+
+<hr>
+<h3>Congrats, you're done!</h3>
+<ul>
+<li>Check your answers on your scantron</li>
+<li>Close the exam webpage</li>
+<li>Hand in your scantron and any scrap paper you used or were provided *FACE DOWN* to the tray at the front of the room.</li>
+<li>*SILENTLY* work on any assignments, practice keyboarding, etc.</li>
+</ul>
+
+</body>
+</html>
